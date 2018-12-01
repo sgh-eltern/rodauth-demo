@@ -1,0 +1,9 @@
+<p>
+  <% if rodauth.logged_in? %>
+    Wenn Sie es wünschen, können Sie Ihr Konto natürlich auch <a href="/close-account">löschen</a>.
+  <% else %>
+      Bitte <a href="<%= rodauth.login_route %>">melden Sie sich an</a> oder
+      <a href="<%= rodauth.create_account_route %>">legen Sie ein neues Konto an</a>,
+      um die eMail-Verteiler Ihrer Klasse(n) zu sehen.
+  <% end %>
+</p>
